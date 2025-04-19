@@ -40,16 +40,10 @@ android {
 }
 
 dependencies {
-//    def camerax_version = "1.3.3" // Use the latest stable version
-//    implementation "androidx.camera:camera-core:${camerax_version}"
-//    implementation "androidx.camera:camera-camera2:${camerax_version}"
-//    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
-//    implementation "androidx.camera:camera-view:${camerax_version}"
-//    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    implementation (libs.zxing.android.embedded)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.material)
     implementation(libs.androidx.camera.camera2)
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
